@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Parisienne";
+  src: url("/Parisienne-Regular.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
   background-color: #eb3b43;
@@ -5,8 +10,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 10px;
-  font-family: "Lucida Calligraphy", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen";
+  font-family: "Parisienne", "Lucida Calligraphy", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen";
 }
 
 h1 {
