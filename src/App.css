@@ -2,13 +2,9 @@
   text-align: center;
   background-color: #eb3b43;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: auto;
+  padding: 10px;
   font-family: "Lucida Calligraphy", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen";
 }
@@ -18,14 +14,71 @@ h1 {
   margin-top: 3em;
 }
 
+.BackgroundFrame {
+  background-image: url("/bg-rahmen.png");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.Card {
+  background-color: #fff;
+  border: solid 1em #fff;
+  width: 90%;
+  height: 70vh;
+}
+
+.InnerCard {
+  border: solid 2px #858d5c;
+  height: 100%;
+}
+
+.Title {
+  font-size: 2em;
+  color: #000;
+  margin-top: 10px;
+}
+
+.CardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Heart {
+  background-image: url("/herz.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 10px;
+  justify-self: flex-end;
+}
+
+@media screen and (min-width: 900px) {
+  .Heart {
+    min-width: 302px;
+    min-height: 314px;
+    margin-right: 10%;
+  }
+}
+
+hr {
+  border: solid 1px #858d5c;
+  width: 80%;
+}
+
 .BackgroundContainer {
   display: flex;
   flex-direction: column;
   background-image: url("/bg.png");
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
+  min-height: 300px;
   height: 90%;
   width: 95%;
 }

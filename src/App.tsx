@@ -18,20 +18,28 @@ const App: React.FC = () => {
       return;
     }
     const part: SongPart | null = song.getSongPart(currentTime);
-    if (!part) {
-      setCurrentText("");
+    if (!part || part.text.length === 0) {
+      setCurrentText("~ 10.10.2020 ~");
     } else {
       setCurrentText(part.text);
     }
   };
 
-  const [currentText, setCurrentText] = useState("");
+  const [currentText, setCurrentText] = useState("~ 10.10.2020 ~");
 
   return (
     <div className="App">
-      <div className="BackgroundContainer">
-        <h1>Christian & Michèle</h1>
-        <SongText text={currentText}></SongText>
+      <div className="BackgroundFrame">
+        <div className="Card">
+          <div className="InnerCard">
+            <div className="Title">Christian & Michèle</div>
+            <hr></hr>
+            <div className="CardContent">
+              <SongText text={currentText}></SongText>
+              <div className="Heart"></div>
+            </div>
+          </div>
+        </div>
       </div>
       <AudioPlayer
         audioRef={audioRef}
