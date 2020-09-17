@@ -18,7 +18,9 @@ const AudioPlayer: React.FC<AudioPlayerProps> = (props: AudioPlayerProps) => {
       onPlay={onPlay}
       onTimeUpdate={onTimeUpdate}
     >
-      <source src="/song.m4a" type="audio/mpeg"></source>
+      <source src="/song.m4a" type="audio/aac"></source>
+      <source src="/song.mp3" type="audio/mpeg"></source>
+      <source src="/song.ogg" type="audio/ogg"></source>
     </audio>
   );
 };
