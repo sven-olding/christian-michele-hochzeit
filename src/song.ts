@@ -87,7 +87,7 @@ const songParts: SongPart[] = [
     startTime: 84,
     endTime: 92,
     text:
-      "Ihr wart nie gut in Wahrscheinlichkeitsrechnung aber auch das hier habt ihr kapiert:",
+      "Ihr wart nie gut in Wahrscheinlichkeits-rechnung aber auch das hier habt ihr kapiert:",
   },
   {
     startTime: 92,
